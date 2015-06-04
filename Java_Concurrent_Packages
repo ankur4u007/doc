@@ -14,5 +14,8 @@ o Java.util.concurrent.locks
 o Java.lang.Threads
 
 Executor Framework:
--> provides abstraction for task execution
+-> provides 'abstraction' for task execution
 -> supports 'launching' new tasks
+-> based on the “producer-consumer” pattern( Producers: ones that submit the tasks, consumers: threads that run those tasks)
+-> implementations: ThreadPoolExecutor and schedulesThreadPoolExecutor
+-> Subinterface : ExecutorService and 
