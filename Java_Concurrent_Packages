@@ -1,0 +1,18 @@
+java concurnecy courtsey Doug Lea:
+
+A)Java concurrency advantages (Performance,relaibility,maintainable):
+1)exploiting multiple cores
+2)illusion of parallelism on single core machines by acuiring and releasing cpu at runtime
+3)supports multithreading
+4)provides thread safe synchronisation
+5)Reduced time to develop for even a complex thread program
+
+B) Following are the JAVA packages that support concurrent programming
+o Java.util.concurrent
+o Java.util.concurrent.atomic
+o Java.util.concurrent.locks
+o Java.lang.Threads
+
+Executor Framework:
+-> provides abstraction for task execution
+-> supports 'launching' new tasks
