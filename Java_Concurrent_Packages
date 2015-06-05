@@ -36,6 +36,10 @@ statement cannot be interrupted.
 ->reset CountDownLatch before using it again!
 -> CyclicBarrier vs CountDownLatch
 ->semaphores, mutexes and barriers are used to implement synchronisation
--> semaphores are binary flags, can be set to 0 (acquire()) and 1 (release())
--> Mutex are locks in java (ReadWriteLocks).
--> Barriers insures that all the threads wait for each other to reach to a common barrier point
+-> semaphores are binary flags, can be set to 0 (acquire()) and 1 (release()) (Seamaphore class)
+-> Mutex are locks in java (ReadWriteLocks class)).
+-> Barriers insures that all the threads wait for each other to reach to a common barrier point (CyclicBarrier class) by 
+invoking await() which cause the program to move forward!
+-> CyclicBarrier vs CountDownLatch = countdownlatch keeps the track of the number of the threads running simultaenously and
+counts down their number upon thread finish. while cyclic barrier wait for all other threads at a barrier point.
+
