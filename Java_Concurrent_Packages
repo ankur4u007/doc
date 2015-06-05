@@ -28,4 +28,14 @@ Executor Framework:
 
 points to ponder:
 ->lock striping in ConcurrentHashMaps
-->
+->Fairness in ReentrantLock
+-> actions that can trigger release of a lock
+-> specifying atomic keyword or using atomic classes, the code ensures that the thread executing the 
+statement cannot be interrupted.
+-> additional parameter “runnable()” in CyclicBarrier specifying action to be done upong crossing the barrier.
+->reset CountDownLatch before using it again!
+-> CyclicBarrier vs CountDownLatch
+->semaphores, mutexes and barriers are used to implement synchronisation
+-> semaphores are binary flags, can be set to 0 (acquire()) and 1 (release())
+-> Mutex are locks in java (ReadWriteLocks).
+-> Barriers insures that all the threads wait for each other to reach to a common barrier point
