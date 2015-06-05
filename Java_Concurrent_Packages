@@ -18,4 +18,14 @@ Executor Framework:
 -> supports 'launching' new tasks
 -> based on the “producer-consumer” pattern( Producers: ones that submit the tasks, consumers: threads that run those tasks)
 -> implementations: ThreadPoolExecutor and schedulesThreadPoolExecutor
--> Subinterface : ExecutorService and 
+-> Subinterface : ExecutorService and Runnable interface
+-> Callable and Runnable
+-> Callable return a value as well as throws exception to parent thread.
+-> runnable return void and doesnt throw any excpetion to parent thread.
+-> AbstractExecutorService: Provides default implementations of  the ExecutorService execution method
+-> ScheduledExecutorService: Supports both the Callable and Runnable objects with delays
+
+
+points to ponder:
+->lock striping in ConcurrentHashMaps
+->
