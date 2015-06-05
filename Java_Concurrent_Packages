@@ -35,11 +35,24 @@ statement cannot be interrupted.
 -> additional parameter “runnable()” in CyclicBarrier specifying action to be done upong crossing the barrier.
 ->reset CountDownLatch before using it again!
 -> CyclicBarrier vs CountDownLatch
-->semaphores, mutexes and barriers are used to implement synchronisation
+
+>semaphores, mutexes and barriers are used to implement synchronisation
 -> semaphores are binary flags, can be set to 0 (acquire()) and 1 (release()) (Seamaphore class)
 -> Mutex are locks in java (ReadWriteLocks class)).
 -> Barriers insures that all the threads wait for each other to reach to a common barrier point (CyclicBarrier class) by 
 invoking await() which cause the program to move forward!
 -> CyclicBarrier vs CountDownLatch = countdownlatch keeps the track of the number of the threads running simultaenously and
 counts down their number upon thread finish. while cyclic barrier wait for all other threads at a barrier point.
+
+-> Queue -> Mehtods -> offer(),poll(),remove(). AbstractQueue provides basic queue functionality.
+-> Types of Queues: Blocking Queue & Non-blocking queue
+-> Non Blockingqueue based on low level harware atomic operation ( CAS -> compare and swap)
+-> BlockingQueue-> a)PriorityBlockingQueue b)LinkedBlockingQueue c)DelayQueue d)ArrayBlockingQueue
+-> Non-blockingQUeue-> a)ConcurrentLinkedQueue b) PrirorityQueue
+-> synchronous queue is a blocking queue where insert(put()) is blcoked until a remove(take()) is done on the queue.
+
+-> Futures -> Future is an object returned by executing callable task containing the result of the callable task.
+-> result is fetched using get() that is blocked till the result is obtained.
+-> completion cna be checked using isDone() and cancelled using cnacel()
+-> Threadfactory
 
